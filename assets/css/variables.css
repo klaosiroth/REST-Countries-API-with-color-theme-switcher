@@ -1,0 +1,98 @@
+/* Default variable colours */
+:root {
+  --primary: hsl(0, 0%, 98%); /* Light Mode Background */
+  --secondary: hsl(0, 0%, 100%); /* Light Mode Elements */
+  --text-color: hsl(200, 15%, 8%); /* Light Mode Text */
+}
+
+[data-theme='dark'] {
+  --primary: hsl(207, 26%, 17%); /* Dark Mode Background */
+  --secondary: hsl(209, 23%, 22%); /* Dark Mode Elements */
+  --text-color: hsl(0, 0%, 100%); /* Dark Mode Text & Light Mode Elements  */
+}
+
+:root {
+  /**
+   * Color
+   */
+  --oxford-blue: hsl(209, 23%, 22%);
+  --ebony-clay: hsl(207, 26%, 17%);
+  --woodsmoke: hsl(200, 15%, 8%);
+  --gray: hsl(0, 0%, 52%);
+  --mercury: hsl(0, 0%, 90%);
+  --alabaster: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  /**
+   * Shadows
+   */
+  --shadow-20: hsla(0, 0%, 0%, 0.2);
+  --shadow-40: hsla(0, 0%, 0%, 0.4);
+  --shadow-60: hsla(0, 0%, 0%, 0.6);
+  --shadow-80: hsla(0, 0%, 0%, 0.8);
+  /**
+   * Font
+   */
+  --font-family: 'Nunito Sans', sans-serif;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+  --font-size-22: 22px;
+  --font-weight-300: 300;
+  --font-weight-600: 600;
+  --font-weight-800: 800;
+  /**
+   * Filters
+   */
+  --filter-gray: invert(56%) sepia(24%) saturate(0%) hue-rotate(194deg)
+    brightness(89%) contrast(83%);
+  --filter-white: invert(99%) sepia(1%) saturate(109%) hue-rotate(242deg)
+    brightness(115%) contrast(100%);
+  --filter-woodsmoke: invert(5%) sepia(6%) saturate(2225%) hue-rotate(156deg)
+    brightness(92%) contrast(92%);
+  /*
+   * Transitions
+   */
+  --transition-time: 150ms;
+  /**
+   * Derived Variable
+   */
+  /* Background Colors */
+  --html--color: var(--woodsmoke);
+  --body--background-color: var(--alabaster);
+  --header--background-color: var(--white);
+  --header__button--dark-mode--hover--background-color: var(--mercury);
+  --search--background-color: var(--white);
+  --filter__button--background-color: var(--white);
+  --filter__menu--background-color: var(--white);
+  --filter__item--hover--background-color: var(--mercury);
+  --list__empty--color: var(--gray);
+  --list__card--background-color: var(--white);
+  --border-countries__link--background-color: var(--white);
+  --border-countries__link--hover--background-color: var(--mercury);
+  --button--back--background-color: var(--white);
+  --button--back--hover--background-color: var(--mercury);
+  /* Text Colors */
+  --search__input--color: var(--gray);
+  --loader--border-all--color: var(--oxford-blue);
+  --loader--border-top--color: var(--mercury);
+  --loader--border-top--color: var(--mercury);
+
+  /* Filters */
+  --button__icon--dark-mode--filter: var(--filter-woodsmoke);
+  --search__icon--filter: var(--filter-gray);
+  --filter__icon--filter: var(--filter-woodsmoke);
+  --button__icon--back--filter: var(--filter-woodsmoke);
+  /* Box Shadows */
+  --header--box-shadow: var(--shadow-20);
+  --button--back--box-shadow: var(--shadow-20);
+  --border-countries__link--box-shadow: var(--shadow-20);
+  --card--box-shadow: var(--shadow-20);
+  --card--hover--box-shadow: var(--shadow-40);
+  --filter__button--after--box-shadow: var(--shadow-20);
+  --filter__menu--after--box-shadow: var(--shadow-40);
+  --search--box-shadow: var(--shadow-20);
+
+  /* Input Placeholders */
+  --search__input--placeholder: var(--gray);
+}
